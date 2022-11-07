@@ -23,7 +23,6 @@
     const getPass2Value = () => {
         return pass2Value;
     }
-
     for (const show of showPass) {
       
         show.onclick = (e) => {
@@ -65,7 +64,6 @@
 
     const isFocus = (element) => {
         element.classList.replace(element.classList[0], 'none');
-        status = 'none';
         for (const child of element.parentElement.children) {
                if (child.className === 'message')  {
                 child.innerHTML = ''

@@ -16,11 +16,8 @@
         return passValue;
     }
 
-    for (const show of showPass) {
-        
+    for (const show of showPass) {  
         show.onclick = (e) => {
-        
-            
             if (show.className.includes(isHide)) {
                 show.classList.replace(isHide, isShow);
                 for (const child of show.parentElement.children) {
@@ -49,7 +46,6 @@
 
     const isFocus = (element) => {
         element.classList.replace(element.classList[0], 'none');
-        status = 'none';
         for (const child of element.parentElement.children) {
                if (child.className === 'message')  {
                 child.innerHTML = ''
@@ -176,6 +172,7 @@
     pass.onfocus = (e) => {
         isFocus(pass)
     }
+
     const rules = [
         {
             rule: [
